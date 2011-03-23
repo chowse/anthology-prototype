@@ -1,0 +1,11 @@
+# Ignore licensed fonts
+*.eot
+*.ttf
+*.otf
+
+# Ignore project files
+*.tmproj
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
