@@ -371,3 +371,13 @@ html {
 		background: #F5F5F1;
 	}
 
+
+/* Learn Pages */
+
+
+#learn-body-alt {
+}
+	#learn-body-alt .doc-block {
+		width: 670px;
+		margin: 20px auto 0 0;
+	}
