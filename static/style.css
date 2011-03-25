@@ -130,7 +130,43 @@ html {
 		font-size: 12px;
 		line-height: 14px;
 	}
-
+	.link-list .tag {
+/*
+		display: inline-block;
+		text-indent: -1000em;
+*/
+		display: inline-block;
+		padding: 2px 4px;
+		border-radius: 2px;
+		background: #f06529;
+		color: #fff;
+		font-size: 10px;
+		font-weight: normal;
+		line-height: 10px;
+		letter-spacing: .5px;
+		vertical-align: 1px;
+	}
+	.link-list .tag.html5 {
+/*
+		position: relative;
+		width: 14px;
+		height: 12px;
+		margin-left: 2px;
+*/
+	}
+/*
+	.link-list .tag.html5:before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: -3px;
+		width: 14px;
+		height: 17px;
+		background: url(img/tag-html5.png) no-repeat;
+	}
+*/
+	.link-list .tag.css3 {
+	}
 
 /* Global header  */
 
