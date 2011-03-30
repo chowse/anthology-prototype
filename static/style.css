@@ -20,7 +20,7 @@ html {
 	body {
 		background: none;
 		color: inherit;
-		margin-bottom: 80px;
+		margin-bottom: 120px;
 	}
 	.wrap {
 		position: relative;
@@ -275,6 +275,14 @@ html {
 	}
 
 
+#learn-fineprint {
+	font-size: 10px;
+	line-height: 14px;
+	padding: 0 20px;
+}
+
+
+/* Front Page */
 
 #landing-wings {
 	position: relative;
@@ -351,7 +359,7 @@ html {
 
 #landing-p2pu {
 	position: relative;
-	margin: 40px 0 120px;
+	margin: 40px 0;
 	padding: 20px;
 	padding-left: 120px;
 	background: rgba(209, 209, 193, .5);
@@ -371,9 +379,18 @@ html {
 		color: #333;
 		font-weight: bold;
 	}
-	#landing-p2pu :link {
+	#landing-p2pu a {
 		font-weight: bold;
 	}
+		#landing-p2pu a span {
+			content: '';
+			position: absolute;
+			left: 20px;
+			top: 20px;
+			width: 83px;
+			height: 80px;
+			background: url(img/p2pu.png) no-repeat 0 0;
+		}
 
 
 /* Learn Pages */
