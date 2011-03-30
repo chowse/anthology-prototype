@@ -18,61 +18,26 @@
 		return this;
 	};
 	
-	$(function() {
+	$.fn.popup = function(popupElem) {
+		this.removeAttr('title');
 		
-		$('.expandable .expander').click(function() {
-			$(this).closest('.expandable').toggleClass('expanded collapsed');
-			return false;
-		});
-
-		$('#proto-controls .close').click(function() {
-			$('#proto-controls').hide();
-			return false;
-		});
-		
-		$('#proto-controls').delegate('a', 'click', function() {
-			var btn = $(this),
-			    cls = btn.data('class'),
-			    doc = $(document.documentElement),
-			    enabled = doc.hasClass(cls);
-			
-			doc.toggleClass(cls, !enabled);
-			btn.toggleClass('selected', !enabled);
-			
-			return false;
-		})
-		
-		$('.show-lightbox').click(function() {
-			$('#lightbox, #lightbox-overlay').showLightbox();
-			return false;
-		});
-		
-		$('#lightbox-overlay, #lightbox-close').click(function() {
-			$('#lightbox, #lightbox-overlay').hideLightbox();
-			return false;
-		});
-		
-		$('.site-balloon .close').click(function() {
-			$(this)
-				.closest('.site-balloon')
-				.animate({ opacity: 0 }, 200, 'linear')
-				.animate({ height: 'hide' }, 200, 'linear');
-			return false;
-		});
-		
-		$('.anim-scroll').click(function() {
-			var href = $(this).attr('href');
-			var target = $( href.match(/#.*$/)[0] );
-			if (target.hasClass('expandable')) {
-				target.addClass('expanded').removeClass('collapsed');
+		return this.hover(
+			function onIn() {
+				var self = $(this),
+				    offs = self.offset(),
+				    w = self.outerWidth(),
+				    h = self.outerHeight();
+				$(popupElem)
+					.offset( { left: (offs.left + w/2), top: (offs.top + h/2) })
+					.addClass('visible');
+			},
+			function onOut() {
+				$(popupElem).removeClass('visible');
 			}
-			var top = target.offset().top - 15;
-			$(document.documentElement).animate({ scrollTop: top }, 500);
-			return false;
-		});
-		
-		setTimeout(function() {
-			$('#proto-controls').removeClass('initial');
-		}, 1000);
+		);
+	};
+	
+	$(function() {
+		$('.tag.html5').popup('#html5-popup');
 	});
 })(jQuery);
