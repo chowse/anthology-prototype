@@ -286,9 +286,125 @@ html {
 
 #landing-wings {
 	position: relative;
+	padding: 14px 16px 14px 16px;
+/*
 	left: -4px;
 	padding-bottom: 4px;
+*/
 }
+/*
+#landing-wings:after {
+	content: '';
+	display: block;
+	clear: both;
+	visibility: hidden;
+}
+*/
+	#landing-wings-bg {
+		position: absolute;
+		z-index: 998;
+		background: #1a1a1a;
+		background: -moz-linear-gradient(top, #262626, #1a1a1a);
+		left: 14px;
+		right: 14px;
+		top: 12px;
+		bottom: 14px;
+	}
+	#landing-wings-l,
+	#landing-wings-r,
+	#landing-wings-t,
+	#landing-wings-b {
+		position: absolute;
+		z-index: 999;
+		background: no-repeat transparent;
+	}
+	#landing-wings-l,
+	#landing-wings-r {
+		top: 16px;
+		bottom: 26px;
+		width: 21px;
+		background-size: 100% 100%;
+	}
+	#landing-wings-t,
+	#landing-wings-b {
+		left: -3px;
+		right: -3px;
+	}
+	#landing-wings-l {
+		left: -3px;
+		background-image: url(img/bb_l.png);
+	}
+	#landing-wings-r {
+		right: -3px;
+		background-image: url(img/bb_r.png);
+	}
+	#landing-wings-t {
+		top: -2px;
+		height: 18px;
+		background-image: url(img/bb_t.png);
+	}
+	#landing-wings-b {
+		bottom: -7px;
+		height: 33px;
+		background-image: url(img/bb_b.png);
+	}
+	#landing-wings .wings {
+		position: relative;
+		z-index: 1000;
+		margin: 60px 120px;
+	}
+	#landing-wings .wings:after {
+		content: '';
+		display: block;
+		clear: both;
+		visibility: hidden;
+	}
+		#landing-wings .wings > div {
+			position: relative;
+			float: left;
+			width: 33.3%;
+			-moz-box-sizing: border-box;
+		}
+		#landing-wings .wings > div:first-child {
+			left: -60px;
+		}
+		#landing-wings .wings > div:last-child {
+			right: -60px;
+		}
+			#landing-wings .wings > div h2 {
+				height: 80px;
+				margin-bottom: 10px;
+				background: no-repeat 0 0;
+			}
+			#landing-wings .wings > div h2:hover {
+				background-position: 0 -80px;
+			}
+			#landing-wings .wings > div a {
+				display: block;
+				text-indent: -1000em;
+			}
+			#landing-wings .wings > div a:after {
+				content: '';
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+			}
+			#landing-wings .wings > div p {
+				font-size: 12px;
+				line-height: 16px;
+				color: #999999;
+			}
+			#landing-wings .wings > div strong {
+				font-weight: bold;
+				color: #ccc;
+			}
+			#landing-wings #landing-wings-html h2 { background-image: url(img/heading-html.png); }
+			#landing-wings #landing-wings-css h2 { background-image: url(img/heading-css.png); }
+			#landing-wings #landing-wings-js h2 { background-image: url(img/heading-js.png); }
+
+/*
 #landing-wings:after {
 	content: '';
 	display: block;
@@ -339,10 +455,10 @@ html {
 				top: 0;
 				bottom: 0;
 			}
-/*
+*//*
 			#landing-wings .boxed h2 a { color: #666; }
 			#landing-wings .boxed h2 a strong { color: #fb9500; }
-			*/			
+			*//*
 			#landing-wings .boxed h2 small {
 				display: block;
 				margin-top: -12px;
@@ -355,6 +471,7 @@ html {
 		line-height: 16px;
 		color: #666;
 	}
+*/
 
 
 #landing-p2pu {
