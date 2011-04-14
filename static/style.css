@@ -284,6 +284,17 @@ html {
 
 /* Front Page */
 
+#landing-header {
+	padding-bottom: 0;
+	background: none;
+	text-align: center;
+}
+	#landing-header p {
+		width: 780px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
 #landing-wings {
 	position: relative;
 	padding: 14px 16px 14px 16px;
