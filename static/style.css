@@ -54,7 +54,7 @@ html {
 .two-col {
 	display: block;
 	position: relative;
-	margin-left: 20px;
+	margin-left: 40px;
 }
 	.two-col .col {
 		display: block;
@@ -64,7 +64,7 @@ html {
 		-moz-box-sizing: border-box;
 	}
 	.two-col .col:first-child {
-		left: -20px;
+		left: -40px;
 	}
 	.two-col .col:last-child {
 	}
@@ -89,13 +89,13 @@ html {
 		border-left: 1px dotted #ccc;
 	}
 .two-col.wide-gap {
-	margin-left: 60px;
+	margin-left: 80px;
 }
 	.two-col.wide-gap .col:first-child {
-		left: -60px;
+		left: -80px;
 	}
 	.two-col.wide-gap .rule {
-		width: 60px;
+		width: 80px;
 	}
 
 .two-col-text {
@@ -233,70 +233,71 @@ html {
 
 .page-header {
 	margin-bottom: 40px;
-	padding: 40px 0;
+	padding-top: 40px;
 	border-top: 1px solid #A33500;
-	background: -moz-linear-gradient(bottom, 
-		                             rgba(209, 209, 193, 0),
-		                             rgba(209, 209, 193, .5) 60px);
-	background: rgba(209, 209, 193, .5);
+	text-align: center;
 }
 	.page-header h1 {
 		color: #780e0f;
 		color: #ab181a;
 		font-family: LeagueGothic;
-		font-size: 60px;
+		font-size: 72px;
 		letter-spacing: 1px;
 		text-transform: uppercase;
-		text-shadow: 2px 2px 0 rgba(170, 160, 130, .5);
+		text-shadow: 3px 3px 0 rgba(170, 160, 130, .5);
 	}
 	.page-header p {
-		width: 600px;
-		margin-top: .25em;
+		width: 700px;
+		margin: .25em auto 0;
 		font-size: 20px;
 		line-height: 1.25em;
+		color: #666;
+	}
+	.page-header strong {
+		font-weight: bold;
+		color: #333;
 	}
 	.page-header nav {
 		position: absolute;
-		font-size: 11px;
-		line-height: 17px;
+		font-size: 12px;
+		line-height: 14px;
 	}
 		.page-header nav a {
 			position: relative;
-			top: -22px;
+			top: -20px;
 		}
 		
 .page-header.compact {
 }
 	.page-header.compact h1 {
-		font-size: 48px;
 	}
 	.page-header.compact p {
 		font-size: 16px;
 	}
 
 
-#learn-fineprint {
-	font-size: 10px;
-	line-height: 14px;
+.fineprint {
 	padding: 0 20px;
+	font-size: 11px;
+	line-height: 15px;
+	color: #666;
+}
+
+#learn-fineprint {
+	margin: 40px 20px;
 }
 
 
 /* Front Page */
 
 #landing-header {
-	padding-bottom: 0;
-	background: none;
-	text-align: center;
 }
 	#landing-header p {
-		width: 780px;
-		margin-left: auto;
-		margin-right: auto;
 	}
 
 #landing-wings {
 	position: relative;
+	margin: 40px 0 50px;
 	padding: 14px 16px 14px 16px;
 /*
 	left: -4px;
@@ -362,7 +363,7 @@ html {
 	#landing-wings .wings {
 		position: relative;
 		z-index: 1000;
-		margin: 60px 120px;
+		margin: 40px 120px;
 	}
 	#landing-wings .wings:after {
 		content: '';
@@ -485,32 +486,32 @@ html {
 */
 
 
-#landing-p2pu {
+.p2pu {
 	position: relative;
 	margin: 40px 0;
 	padding: 20px;
 	padding-left: 120px;
 	background: rgba(209, 209, 193, .5);
 }
-	#landing-p2pu h2 {
+	.p2pu h2 {
 		font-size: 14px;
 		line-height: 18px;
 		font-weight: bold;
 	}
-	#landing-p2pu p {
+	.p2pu p {
 		margin-top: 6px;
 		font-size: 12px;
 		line-height: 18px;
 		color: #666;
 	}
-	#landing-p2pu strong {
+	.p2pu strong {
 		color: #333;
 		font-weight: bold;
 	}
-	#landing-p2pu a {
+	.p2pu a {
 		font-weight: bold;
 	}
-		#landing-p2pu a span {
+		.p2pu a span {
 			content: '';
 			position: absolute;
 			left: 20px;
@@ -519,6 +520,11 @@ html {
 			height: 80px;
 			background: url(img/p2pu.png) no-repeat 0 0;
 		}
+		
+
+#landing-p2pu {
+	margin: 40px 20px;
+}
 
 
 /* Learn Pages */
