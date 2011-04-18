@@ -315,7 +315,7 @@ html {
 		position: absolute;
 		z-index: 998;
 		background: #1a1a1a;
-		background: -moz-linear-gradient(top, #262626, #1a1a1a);
+		background: url(img/bb_bg.jpg) center top #1a1a1a;
 		left: 14px;
 		right: 14px;
 		top: 12px;
