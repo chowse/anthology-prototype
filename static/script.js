@@ -39,5 +39,6 @@
 	
 	$(function() {
 		$('.tag.html5').popup('#html5-popup');
+		$('.tag.css3').popup('#css3-popup');
 	});
 })(jQuery);
