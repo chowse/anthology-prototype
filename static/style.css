@@ -162,7 +162,8 @@ html {
 		vertical-align: 1px;
 		*/
 	}
-	.link-list .tag.html5 {
+	.link-list .tag.html5,
+	.link-list .tag.css3 {
 		position: relative;
 		width: 14px;
 		height: 14px;
@@ -171,17 +172,23 @@ html {
 		vertical-align: baseline;
 		cursor: help;
 	}
-		.link-list .tag.html5:after {
+		.link-list .tag.html5:after,
+		.link-list .tag.css3:after {
 			content: '';
 			position: absolute;
 			left: 0;
 			top: -1px;
-			width: 14px;
 			height: 17px;
-			background: url(img/tag-html5.png) no-repeat;
+			background: none 0 0 no-repeat;
 		}
-	.link-list .tag.css3 {
-	}
+		.link-list .tag.html5:after {
+			width: 15px;
+			background-image: url(img/tag-html5.png);
+		}
+		.link-list .tag.css3:after {
+			width: 13px;
+			background-image: url(img/tag-css3.png);
+		}
 
 /* Global header  */
 
