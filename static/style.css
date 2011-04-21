@@ -610,6 +610,12 @@ html {
 		background-image: url(img/emblem-examples.png);
 	}
 
+#learn-js-inter {
+}
+	#learn-js-inter h2 {
+		background-image: url(img/emblem-inter.png);
+	}
+
 
 .tag-popup {
 	display: block;
